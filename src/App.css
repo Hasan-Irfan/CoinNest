@@ -1,0 +1,48 @@
+.rotating-logo {
+  animation: rotate 20s linear infinite;
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive logo size */
+.responsive-logo {
+  width: 12rem; /* Base size for smaller screens */
+  height: 12rem;
+}
+
+@media (min-width: 640px) {
+  .responsive-logo {
+    width: 20rem; /* Medium screens (sm) */
+    height: 20rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .responsive-logo {
+    width: 30rem; /* Large screens (md) */
+    height: 30rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .responsive-logo {
+    width: 40rem; /* Extra large screens (lg) */
+    height: 40rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .responsive-logo {
+    width: 45rem; /* 2X large screens (xl) */
+    height: 45rem;
+  }
+}
